@@ -1,0 +1,74 @@
+*{
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+}
+/*https://openweathermap.org/weather-conditions*/
+body{
+	background: url('http://res.cloudinary.com/ddqocjh3g/weatherapp/01d.jpg') no-repeat 100% 100% fixed;
+	background-size: cover;
+	text-align: center;
+	font-size: 1.1em;
+	font-family: 'Open Sans', sans-serif;
+	color: #666666
+}
+
+.container{
+	display: inline-block;
+	min-width: 50%;
+	margin-top: 10%;
+	min-height: 30%;
+	
+}
+/*8C8C8C*/
+.temp{
+	display: inline-block;
+	font-size: 1.8em;
+	background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5%;
+    opacity: 0.6;
+    filter: alpha(opacity=60); 
+    padding-top: 0;
+    padding-right: 15px;
+    padding-left: 5px;
+}
+.temp > img{
+	margin-top: 10px;}
+.details{
+	position: relative;
+	display: inline-block;
+	width: 80%;
+
+}
+.country,
+.desc{
+	position: absolute;
+	text-transform: capitalize;
+	min-height:60%;
+	background: #ffffff;
+	border: 1px solid  #ffffff;
+	border-radius: 5%;
+	opacity: 0.6;
+    filter: alpha(opacity=60);
+	margin: 5px;
+}
+.country{
+	width: 50%;
+	left: 0;
+}
+.desc{
+	width: 30%;
+	left: 60%;
+}
+.countryName{
+	padding: 5px;
+	
+}
+.description{
+	
+	
+}
+
