@@ -1,11 +1,11 @@
 $(document).ready(function() {
 	var lat = "";
 	var lon = "";
-			$.getJSON('http://ip-api.com/json',function (json) {
+			$.getJSON('https://ip-api.com/json',function (json) {
 				
 				lat = json.lat;
 				lon = json.lon;
-				var url = 'http://api.openweathermap.org/data/2.5/forecast/daily?units=metric&lat='
+				var url = 'https://cors-anywhere.herokuapp.com//http://api.openweathermap.org/data/2.5/forecast/daily?units=metric&lat='
 			+lat.toString()+'&lon='+lon.toString()+'&APPID=3b430c594b0f78b779ef14e56256d2ce';
 			console.log(url);
 
