@@ -5,14 +5,15 @@ $(document).ready(function() {
 				console.log(json);
 				lat = json.latitude;
 				lon = json.longitude;
-			getWeather(lat,lon);		
+			getWeather(lat,lon);
+				
 			});
 	function getWeather(lat,lon){
-		var url = 'http://api.openweathermap.org/data/2.5/forecast/daily?units=metric&APPID=3b430c594b0f78b779ef14e56256d2ce&callback=?';
+		var url = 'http://api.openweathermap.org/data/2.5/forecast/daily?units=metric&APPID=3b430c594b0f78b779ef14e56256d2ce&lat='+lat+'&lon='+lon;
 		$.ajax({
 				url: url,
+				type: 'GET',
 				dataType: 'jsonp',
-				data: {lon:lon,lat:lat},
 				success: function(json, textStatus) {
 				console.log(json);
 				var icon = json.list[0].weather[0].icon;
