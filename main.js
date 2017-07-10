@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	var lat = "";
 	var lon = "";
-			$.getJSON('https://ip-api.com/json',function (json) {
+			$.getJSON('https://ipapi.co/json',function (json) {
 				
 				lat = json.lat;
 				lon = json.lon;
